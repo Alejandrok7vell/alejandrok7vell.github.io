@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Playfair:ital,opsz,wdth,wght@0,5..1200,87.5..112.5,300..900;1,5..1200,87.5..112.5,300..900&display=swap');
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+a {
+   color: inherit; /* Esto hace que el color del texto del enlace sea el mismo que el color del texto circundante */
+   text-decoration: none; /* Esto elimina la subrayado predeterminado en los enlaces */
+ }
+
+body {
+   font-family: 'Josefin Sans';
+   line-height: 1.6;
+   background-color: #000000;
+   color: #333;
+}
+
+header {
+   font-size: larger;
+   background: #2b0000;
+   color: #ff0000;
+   padding: 20px;
+   display: flex;
+   justify-content: space-between;
+}
+
+nav {
+   padding: 2px;
+   
+}
+
+.menu ul {
+   color:#ff0000;
+   font-family: 'Playfair';
+   font-size: large;
+   font-style: italic;
+   font-weight: 100;
+   list-style: none;
+   padding-top: 5px;
+}
+
+.menu ul li {
+   display: inline;
+   margin-right: 20px;
+   padding-top: 20px;
+}
+@keyframes textAnimli {
+   from {
+      font-weight: 100;
+      font-stretch: 100%;
+      font-optical-sizing: 14;
+   }
+   to {
+      font-weight: 700;
+      font-stretch: 120%;
+      font-optical-sizing: 144;
+   }
+}
+@keyframes textAnimliBack {
+   from {
+      font-weight: 700;
+      font-stretch: 120%;
+      font-optical-sizing: 144;
+   }
+   to {
+      font-weight: 100;
+      font-stretch: 100%;
+      font-optical-sizing: 14;
+   }
+}
+.menu ul li:hover {
+   animation: textAnimli 0.5s ease forwards;
+}
+.menu ul li:not(:hover) {
+   animation: textAnimliBack 0.3s ease forwards;
+}
+
+.menu ul li a {
+   color: #ff0000;
+   border-bottom: 2px solid;
+   text-decoration: none;
+   padding-top: 20px;
+   padding-bottom: 5px;
+}
+
+#hero {
+   text-align: left;
+   padding: 40px 40px 80px;
+   color: #fff;
+   
+   position: relative;
+
+}
+
+#hero p {
+   font-size: xx-large;
+   line-height: 125%;
+}
+
+.btn {
+   display: inline-block;
+   background: #ff0000;
+   color: #fff;
+   padding: 10px 20px;
+   text-decoration: none;
+   border-radius: 15px;
+   font-size: 2.5vw;
+}
+@keyframes textAnim1 {
+   from {
+      font-weight: 400;
+      font-optical-sizing: 121;
+   }
+   to {
+      font-weight: 200;
+      font-optical-sizing: 100;
+   }
+}@keyframes textAnim1Back {
+   from {
+      font-weight: 200;
+      font-optical-sizing: 100;
+   }
+   to {
+      font-weight: 400;
+      font-optical-sizing: 121;
+   }
+}
+.btn:hover {
+   animation: textAnim1 0.5s ease forwards;
+} .btn:not(:hover) {
+   animation: textAnim1Back 0.2s ease forwards;
+}
+
+.section {
+   padding: 20px;
+   margin: 20px 0;
+}
+
+h2 {
+   font-size: 6vw;
+}
+
+#hero p {
+   font-size: 3.5vw;
+   padding-bottom: 20px;
+}
+
+#features {
+   background: #f4f4f4;
+}
+
+.feature {
+   text-align: center;
+   margin: 0 auto 20px;
+   max-width: 600px;
+}
+
+footer {
+   background-color: #000000;
+   color: #ff0000;
+   text-align: right;
+   padding: 20px;
+   justify-content: end;
+   position: fixed;
+   bottom: 0;
+   width: 100%;
+   box-sizing: border-box;
+}
+
+
+@media screen and (max-width: 650px) {
+   header {
+      flex-direction: column;
+   }
+
+   .menu {
+      text-align: center;
+   }
+
+   h2 {
+      font-size: 15vw;
+   }
+
+   #hero p {
+      font-size: 5vw;
+   }
+ }
+
+ @media screen and (max-width: 490px) {
+   .menu ul {
+      font-size: 3.5vw;
+   }
+
+ }
+ 
